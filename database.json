@@ -1,0 +1,21 @@
+{
+    "tasks": [
+        {
+            "name": "test task 1",
+            "description": "a test task to test this concept",
+            "color": "red",
+            "category": "sample",
+            "section": "false",
+            "est time": "45m",
+            "comp time": "15m",
+            "rem time": "30m",
+            "recurring": "false"
+        }
+    ],
+    "sections": {
+        "name": "test section",
+        "start time": "3:00",
+        "duration": "1h"
+    },
+    "categories": {}
+}
