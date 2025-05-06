@@ -43,7 +43,9 @@ def create_new_task():
         "rem time": est_time,
         "recurring": "false"
     }
-    add_task_to_json(new_task_dict)
+    loaded_dict = functions.load_json_file("./database.json")
+    loaded_dict['tasks'].append(new_task_dict)
+    functions.update_json_file("./database.json", loaded_dict)
     
     
 # TODO: need to create function to add new tasks to json file
