@@ -14,5 +14,9 @@ def run():
                 break
             case "help":
                 cmdLists.generate_cmd_list("sections")
+            case "list":
+                cmdLists.generate_cmd_list("section list")
+            case "edit":
+                print("this will eventually edit a section")
             case _:
                 print("Invalid command")

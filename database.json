@@ -10,12 +10,30 @@
             "comp time": "15m",
             "rem time": "30m",
             "recurring": "false"
+        },
+        {
+            "name": "test task 2",
+            "description": "a second test task, created from running the application",
+            "color": "blue",
+            "category": "tests",
+            "section": "section 2",
+            "due date": "june 3, 2025",
+            "est time": "30m",
+            "comp time": "0m",
+            "rem time": "30m",
+            "recurring": "false"
         }
     ],
-    "sections": {
-        "name": "test section",
-        "start time": "3:00",
-        "duration": "1h"
-    },
-    "categories": {}
+    "sections": [
+        {
+            "name": "test section",
+            "start time": "3:00",
+            "duration": "1h"
+        }
+        
+    ],
+    "categories": [
+
+    ]
+    
 }

@@ -34,6 +34,14 @@ def get_task_list():
     return filtered_task_list
 
 
+def get_section_list():
+    loaded_section_list = functions.load_json_file("./database.json")
+    filtered_section_list = {}
+    for section in loaded_section_list['sections']:
+        filtered_section_list[section['name']] = section['start time']
+    return filtered_section_list
+
+
 error = {
         "an edge case has occurred": "Please look into the error"
 }
@@ -51,6 +59,8 @@ def get_list(list_name):
             return categories
         case "task list":
             return get_task_list()
+        case "section list":
+            return get_section_list()
         case _:  # edge case, will probably never be used
             return error
 
